@@ -50,7 +50,7 @@ const FormList = () => {
     <>
       <h3>Please enter the values:</h3>
       <Container className="mt-3">
-        <Form onSubmit={handleSubmit}>
+        <Form data-testid="form" onSubmit={handleSubmit}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text>Enter your name</InputGroup.Text>
@@ -77,9 +77,19 @@ const FormList = () => {
             <InputGroup.Prepend>
               <InputGroup.Text>Enter your age</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl ref={ageRef} required />
+            <FormControl
+              data-testid="age-input"
+              type="text"
+              ref={ageRef}
+              required
+            />
           </InputGroup>
-          <Button size="lg" variant="primary" type="submit">
+          <Button
+            data-testid="button-test"
+            size="lg"
+            variant="primary"
+            type="submit"
+          >
             Submit
           </Button>
         </Form>
