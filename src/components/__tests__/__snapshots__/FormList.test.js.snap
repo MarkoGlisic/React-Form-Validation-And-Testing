@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormList/> matches the snapshot 1`] = `
+Array [
+  <h3>
+    Please enter the values:
+  </h3>,
+  <div
+    className="mt-3 container"
+  >
+    <form
+      className=""
+      data-testid="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Enter your name
+          </span>
+        </div>
+        <input
+          className="form-control"
+          data-testid="name-input"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Enter your email
+          </span>
+        </div>
+        <input
+          className="form-control"
+          data-testid="email-input"
+          required={true}
+          type="email"
+        />
+      </div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Enter your age
+          </span>
+        </div>
+        <input
+          className="form-control"
+          data-testid="age-input"
+          required={true}
+          type="text"
+        />
+      </div>
+      <button
+        className="btn btn-primary btn-lg"
+        data-testid="button-test"
+        disabled={false}
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>,
+]
+`;
